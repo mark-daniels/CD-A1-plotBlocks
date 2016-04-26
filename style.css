@@ -1,0 +1,63 @@
+/*CSS reset settings here*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper{
+	width: 950px;
+	background-color: silver;
+	margin: 0px auto;
+	/* Mark's additions */
+	overflow: hidden;
+	padding: 20px;
+	/* I uploaded the </div><div> option though */
+	font-size: 0px; /* remove white space between divs, explanation below */
+}
+#header{
+	height: 150px;
+	background-color: green;
+}
+#navigation{
+	height: 300px;
+	width: 200px;
+	background-color: blue;
+}
+#main_content{
+	height: 400px;
+	width: 735px; /* Mark's change from 700px */
+	background-color: red;
+	/* Mark's addition */
+	margin-left: 15px;
+}
+.subcontents{
+	height: 200px;
+	width: 210px;
+	background-color: yellow;
+	/* Mark's addition */
+	margin-left: 15px;
+}
+#advertisement{
+	height: 120px;
+	width: 660px;
+	background-color: purple;
+	/* Mark's addition */
+	margin: 15px 0px 0px 15px;
+}
+
+/* Mark's additions */
+.myClass {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+}
+
+/*White space between divs:
+	the reason that you get a space is that an enter is read as a space by the HTML compiler,
+	so by basically telling HTML that " " doesn't take up any space (due to font size being 0),
+	it solves the problem, other wise you lose other functionality.
+	(the <textarea> tag is especially bad about this btw).
+
+	Solutions (by mike_hannon):
+	Option 1: <div></div><div>....</div>
+	Option 2: <div></div><!-- --!><div>
+	Option 3: CSS div parent {line-height:0; font-size:0;} */
