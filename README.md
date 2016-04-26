@@ -1,1 +1,0 @@
-Coding Dojo Assignment 1: Position practice (CD-A1-plotBlocks)
